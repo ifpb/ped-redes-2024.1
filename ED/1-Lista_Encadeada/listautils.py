@@ -55,13 +55,10 @@ class ListUtils:
         while atual is not None or atual2 is not None:
             if atual is not None:
                 lista3.inserir_no_final(atual.carga)
-
-            if atual2 is not None:
-                lista3.inserir_no_final(atual2.carga)
-
-            if atual is not None:
                 atual = atual.prox
 
             if atual2 is not None:
+                lista3.inserir_no_final(atual2.carga)
                 atual2 = atual2.prox
+
         return lista3

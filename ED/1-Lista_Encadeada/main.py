@@ -38,8 +38,10 @@ if __name__ == '__main__':
     print("Q2 - Elementos Pares")
     print(l.pares())
     print("Q2 - elementos impares")
-    print(l.impares())
-    print("BUSCA = ", l.buscar_pos(10))
+    print(l.impares())   
+    print("Q2 - Elementos ")
+    print(l)
+    print("BUSCA = ", l.buscar_pos(4))
 
     print(l)
     print("remover elemento")

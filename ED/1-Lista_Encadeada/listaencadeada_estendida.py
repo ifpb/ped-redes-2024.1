@@ -57,6 +57,8 @@ class ListaEncadeadaEstendida(ListaEncadeada):
 
         if atual is not None and atual.prox is not None:
             atual.prox = atual.prox.prox
+            if atual.prox is None:
+                self.cauda = atual
 
     def remover_ocorrencias(self, valor):
         while self.remover_por_valor(valor):

@@ -11,7 +11,7 @@ class ListaLimitada(ListaEncadeada):
         self.elementos = 0
         super().__init__()
 
-    def inserir_no_inicio(self, valor: object):
+    def inserir_no_inicio(self, valor):
         if self.elementos < self.capacidade:
             super().inserir_no_inicio(valor)
             self.elementos += 1
